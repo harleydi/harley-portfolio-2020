@@ -3,6 +3,8 @@
   height: 100%;
   width: 100%;
   position: fixed;
+  /* background: url(./images/test.jpg); */
+  /* background-size: cover; */
 }
 
 body, html {
@@ -16,21 +18,37 @@ body, html {
 /* NAVBAR */
 /*  */
 
+.nameLogo {
+  display: flex;
+  font-size: medium;
+  font-family: 'Mouse Memoirs', sans-serif;
+  letter-spacing: 1.5px;
+  /* font-family: 'Lexend Peta', sans-serif; */
+  color: black;
+}
 
+a {
+  color: black;
+  margin-right: 20px;
+}
 
 a:hover {
   text-decoration: none;
-  color: linear-gradient(to right, #283c86, #45a247);
 }
 
 .links {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: flex-end;
   align-items: center;
-  height: 5%;
+  height: 8%;
   font-size: larger;
   font-weight: 200;
+  letter-spacing: 2px;
+  /* background: linear-gradient(to right, #283c86, #45a247); */
+  /* background: #c5c3c6; */
+  /* color: #283c86; */
+  /* font-family: 'Libre Baskerville', serif; */
 }
 
 .links:hover {
@@ -52,7 +70,8 @@ a:hover {
   display: flex;
   flex-direction: column;
   position: absolute;
-  background: linear-gradient(to right, #283c86, #45a247);
+  /* background: linear-gradient(to right, #283c86, #45a247); */
+  /* background: #46494c; */
   /* top: 50%; */
   /* margin: -25px 0; */
   /* background-image: url('./images/2train.jpg'); */
@@ -65,14 +84,20 @@ a:hover {
 
 .introduction {
   margin-top: 100px;
-  color: whitesmoke;
+  color: black;
   /* width: 80%; */
+  /* letter-spacing: 3px; */
 }
 
 .title {
   text-align: center;
-  font-family: 'Libre Baskerville', serif;
-  font-size: 100px;
+  /* font-family: 'Libre Baskerville', serif; */
+  /* font-family: 'Raleway', sans-serif; */
+  font-size: 80px;
+  font-family: 'Mouse Memoirs', sans-serif;
+  letter-spacing: 10px;
+  /* font-weight: 900; */
+  color: black;
 }
 
 .brandStatement {
@@ -81,6 +106,7 @@ a:hover {
   margin-left: 25%;
   margin-top: 10%;
   font-family: 'Raleway', sans-serif;
+  letter-spacing: 3px;
 }
 
 .homeButtons {
@@ -90,20 +116,37 @@ a:hover {
   font-family: 'Raleway', sans-serif;
 }
 
+Button {
+  /* background: linear-gradient(to right, #283c86, #45a247); */
+
+}
+
 
 /*  */
 /* PORTFOLIO */
 /*  */
 
+.portfolio {
+  /* background: #C1BFB5; */
+  height: 100%;
+}
 
 .portTitle {
   text-align: center;
+  margin-top: 3%;
+  /* font-family: 'Libre Baskerville', serif; */
+  letter-spacing: 12px;
 }
 
 .cards {
-  margin-top: 10%;
   display: flex;
   justify-content: space-evenly;
+  margin-top: 5%;
+  line-height: normal;
+}
+
+.card {
+  height: auto;
 }
 
 .cardButtons {
@@ -115,4 +158,45 @@ a:hover {
 .cardButton {
   background: linear-gradient(to right, #283c86, #45a247);
   border: none;
+}
+
+
+/*  */
+/* Contact */
+/*  */
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contactText {
+  margin-top: 20%;
+}
+
+.icons {
+  margin-top: 30%;
+}
+
+i {
+  font-size: 5rem;
+}
+
+/*  */
+/* FOOTER */
+/*  */
+
+.footer {
+  position: relative;
+  min-height: 19%;
+  text-align: center;
+}
+
+h6 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  font-size: .7rem;
+  letter-spacing: 2px;
 }
